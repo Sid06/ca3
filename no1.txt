@@ -1,0 +1,16 @@
+#include<stdio.h> 
+ 
+int main() 
+{ 
+ 
+  int i,n;
+  int arrival[10],burst[10],store[10]; 
+  printf("Enter the number of process:- \n "); 
+  scanf("%d",&n); 
+  for(i=0;i<n;i++) 
+  { 
+    printf("Enter Arrival Time and Burst Time for Process %d :",i+1); 
+    scanf("%d",&arrival[i]); 
+    scanf("%d",&burst[i]); 
+    store[i]=burst[i]; 
+  } 
